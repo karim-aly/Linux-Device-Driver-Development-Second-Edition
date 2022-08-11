@@ -23,6 +23,10 @@ Print a list of all loaded modules:
 $ lsmod
 
 
+Print the last 5 loaded modules:
+$ lsmod | head -n 5
+
+
 Print info about a kernel module file:
 $ modinfo <path_to_ko_file>
 $ modinfo <name_of_ko_file_inside_this_dir - /lib/modules/5.15.0-37-generic/kernel/drivers>

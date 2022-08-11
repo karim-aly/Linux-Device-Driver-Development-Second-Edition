@@ -1,0 +1,13 @@
+Compile/Build the kernel module:
+$ make
+
+Clean build dir from build artifacts:
+$ make clean
+
+
+Visible kernel module parameters are found in this path as files (can be read or written according to the permissions set to that parameter):
+$ cd /sys/module/<module_name>/parameters
+
+
+Info about module parameters can be displayed using:
+$ modinfo <kernel_module_ko_file>
