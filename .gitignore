@@ -1,0 +1,47 @@
+# Ignored folders
+.history/
+
+# vscode
+.vscode/*.log
+.vscode-ctags
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+
+# Kernel modules output files
+*.cmd
+*.ko
+*.symvers
+*.order
+*.mod.c

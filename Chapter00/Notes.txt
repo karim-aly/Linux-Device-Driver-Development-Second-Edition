@@ -1,0 +1,47 @@
+Search for available linux-headers:
+$ sudo apt-cache search linux-header
+
+
+Search for available package for linux-headers for our kernel version:
+$ sudo apt-cache search linux-header | grep $(uname -r)
+
+
+Install Linux Kernel Header:
+$ sudo apt install linux-headers-$(uname -r)
+
+
+Install kernel headers for the raspberry pi:
+$ sudo apt install raspberrypi-kernel-headers
+
+
+Search for a specific header file's location:
+$ cd /usr/src/linux-headers-5.15.0-37-generic/
+$ find . -iname "rwonce.h"
+
+
+Print a list of all loaded modules:
+$ lsmod
+
+
+Print info about a kernel module file:
+$ modinfo <path_to_ko_file>
+$ modinfo <name_of_ko_file_inside_this_dir - /lib/modules/5.15.0-37-generic/kernel/drivers>
+
+
+Insert module to the kernel:
+$ sudo insmod <path_to_ko_file>
+
+
+Print kernel messages:
+$ dmesg
+$ cat /dev/kmsg
+$ cat /var/log/syslog
+
+
+To clear kernel message after printing:
+$ sudo dmesg -c
+
+
+Remove kernel module:
+$ rmmod <module_name>
+

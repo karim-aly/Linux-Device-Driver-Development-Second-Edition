@@ -1,0 +1,5 @@
+To compile the kernel module:
+$ make
+
+To clean:
+$ make clean
