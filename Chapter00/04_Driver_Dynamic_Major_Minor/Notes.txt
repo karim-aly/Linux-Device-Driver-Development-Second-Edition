@@ -1,0 +1,18 @@
+List all devices major numbers:
+$ cat /proc/devices
+
+
+Check created class:
+$ ls -l /sys/class/<class_name>
+$ cd /sys/class/<class_name>
+$ ls -l # lists device files that uses this class
+
+
+Check created device file:
+$ ls -l /dev/<device_file_name>
+
+To know the major and minor number of devices:
+# info is in the 5th and 6th column
+$ ls -l /dev
+
+

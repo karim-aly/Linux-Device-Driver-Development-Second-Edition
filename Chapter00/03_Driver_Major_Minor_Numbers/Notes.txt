@@ -1,0 +1,16 @@
+List all devices major numbers:
+$ cat /proc/devices
+
+
+To know the major and minor number of devices:
+# info is in the 5th and 6th column
+$ ls -l /dev
+
+
+Create a device driver file manually (c: character, major:50, minor:0):
+$ sudo mknod /dev/hello_test c 50 0
+$ sudo chmod 777 /dev/hello_test
+
+
+Delete the file manually:
+$ sudo rm /dev/test

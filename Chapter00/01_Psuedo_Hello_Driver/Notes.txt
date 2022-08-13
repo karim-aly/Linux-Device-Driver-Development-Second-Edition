@@ -3,3 +3,7 @@ $ make
 
 To clean:
 $ make clean
+
+To know the current console_loglevel for printk:
+$ cat /proc/sys/kernel/printk
+# more info here: https://www.kernel.org/doc/html/latest/core-api/printk-basics.html
